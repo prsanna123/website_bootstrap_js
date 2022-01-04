@@ -27,12 +27,101 @@
             <li class="nav-item"><a  class="nav-link" href="https://prsanna123.github.io/portfolio/">ABOUT</a></li>
             <li class="nav-item"><a class="nav-link" href="#">DETAILS</a></li>
         </ul>
-
-
 </div>
+
+<script>
+    function fun(){
+        document.getElementById("myModal").innerHTML=""
+    }
+</script>
     <div id="class">
-            <button type="button" class="btn btn-success ">Log in</button>
-            <button type="button" class="btn btn-success"><a href="https://prsanna123.github.io/registration-form/" style="color:white;">register</a></button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                register
+            </button>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!--content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <form>
+                            <table class="table">
+                                <tr>
+                                   <td><button type="button" class="btn" data-toggle="modal" data-target="#Modal"style="background-color:beige;"data-dismiss="modal">
+                                        log in
+                                    </button></td> 
+                                    
+                                    <td><button type="btn" style="background-color:beige;">Sign up</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Username</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="name"></td>
+                                </tr>
+                                <tr><td>E-mail:</td></tr>
+                                <tr><td><input type="email" placeholder="mail"></td></tr>
+                                <tr>
+                                    <td>Password</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="password" placeholder="password"></td>
+                                </tr>
+                                
+                                <tr><td><input type="submit"  style="background-color:green;"value="submit">
+                                <input type="reset" style="background-color:green;" value="reset"></td></tr>
+                            </table>
+                        </form>
+                        </div>
+                        
+                        <button type="button" class="btn-secondary"data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-secondary" data-dismiss="modal">close</button>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal">
+                log in
+            </button>
+            <div class="modal fade" id="Modal" role="dialog">
+                <div class="modal-dialog">
+                    <!--content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="container">
+                                <form>
+                                <table class="table">
+                                    <tr>
+                                        <td>Username</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Password</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="password" placeholder="password"></td>
+                                    </tr>
+                                    
+                                    <tr><td><input type="submit"  style="background-color:green;"value="submit">
+                                    <input type="reset" style="background-color:green;" value="reset"></td></tr>
+                                </table>
+                            </form>
+                            </div>
+                            
+                            <button type="button" class="btn-secondary"data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-secondary" data-dismiss="modal">close</button>
+                        </div>
+                    
+                    </div>
+                </div>
+                </div>
         </div>
     </nav>
     
@@ -66,7 +155,7 @@
      </article > 
      <script>
          function myfun(){
-            document.getElementById('change').innerHTML='<button><a href="https://prsanna123.github.io/registration-form/" style="color:black;">register</a></button>'
+            document.getElementById('change').innerHTML='<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">register</button>'
          }
      </script>  
      <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:darkmagenta">Amazing Prizes</h1>
